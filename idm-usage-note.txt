@@ -1,0 +1,5 @@
+远程激活：
+iwr -useb https://raw.githubusercontent.com/hanmaoye/IDM-Activation-Script/main/IAS.ps1 | iex
+1，9激活
+网络测试：
+ping github.com

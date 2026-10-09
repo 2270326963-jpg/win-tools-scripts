@@ -10,6 +10,18 @@ Windows 系统一键脚本工具集（.bat），配套便携工具箱使用。
 https://github.com/2270326963-jpg/win-tools-scripts/releases/download/v1.0/xxx.bat
 ```
 
+## 脚本清单
+
+| 脚本 | 用途 | 直链下载 |
+|---|---|---|
+| `EnableWindowsUpdatePause20000Days.bat` | 把 Windows 更新的暂停上限拉到 20000 天：只写 `HKLM\SOFTWARE\Microsoft\WindowsUpdate\UX\Settings` 下的 `FlightSettingsMaxPauseDays`（REG_DWORD，十进制 20000），不动更新服务、不改组策略，可随时恢复 | https://github.com/2270326963-jpg/win-tools-scripts/releases/download/v1.0/EnableWindowsUpdatePause20000Days.bat |
+
+`EnableWindowsUpdatePause20000Days.bat` 的 SHA256：
+
+```
+D713EBE6694C7DB09C4129144ADD6C935038BADFA948F0BAB6CF09257F8348A5
+```
+
 ## 使用方法
 
 1. 下载 `.bat` 文件
@@ -33,6 +45,7 @@ https://github.com/2270326963-jpg/win-tools-scripts/releases/download/v1.0/xxx.b
 ## 更新日志
 
 - **v1.0**（2026-09-17）：仓库建立，脚本陆续上架中。
+- **2026-10-09**：移除 `system-disable-win-update.bat`（深度禁用更新，改服务与组策略且难以恢复），改为上架 `EnableWindowsUpdatePause20000Days.bat`（暂停更新上限 20000 天）。
 
 ---
 
